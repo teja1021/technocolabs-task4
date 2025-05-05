@@ -1,0 +1,190 @@
+/* General Body Styling */
+body {
+    background: linear-gradient(to bottom, #f0f8ff, #dbe9f4);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #004aad;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav li {
+    margin: 0;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+li a:hover {
+    background-color: #002f6c;
+    transform: scale(1.1);
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #004aad;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Blog Section */
+#blog {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#blog article {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Media Section */
+#media {
+    background-color: #f7f9fc;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#media h2 {
+    color: #004aad;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#media p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    text-align: center;
+}
+
+/* Aside Section */
+aside {
+    background-color: #eaf3ff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 90%;
+    border-left: 5px solid #004aad;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+aside ol {
+    padding-left: 20px;
+}
+
+aside li {
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Image Styling */
+img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Figure Caption */
+figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Elements */
+video, embed, audio {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    li a {
+        padding: 10px;
+    }
+
+    #blog, #media, aside {
+        max-width: 95%;
+    }
+
+    img, video, embed, audio {
+        max-width: 100%;
+    }
+}
